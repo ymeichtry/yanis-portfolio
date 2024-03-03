@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import "./Footer.css";
 
 function Footer() {
 
   return (
-    <div>
-      <h1>Hallo, ich bin ein Footer!</h1>
-    </div>
+<body>
+<footer>
+  <p>© 2024 Dein Name. Alle Rechte vorbehalten.</p>
+</footer>
+</body>
   );
 }
 
