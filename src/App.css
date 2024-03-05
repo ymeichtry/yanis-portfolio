@@ -6,32 +6,6 @@ body {
   min-height: 100vh;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-right: 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-}
-
 .main-page {
   padding: 20px;
   margin-top: 60px; 
