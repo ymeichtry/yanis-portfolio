@@ -1,11 +1,49 @@
-body {
-  display: flex;
-  flex-direction: column-reverse;
-}
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    bottom: 0;
-  }
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.contact-item {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin: 10px;
+}
+
+.contact-item img {
+  width: 20px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.contact-item span {
+  margin-left: 5px;
+}
+
+.footer-social-media {
+  display: flex;
+  background-color: #333;
+}
+
+.footer-social-media img {
+  width: 35px;
+  height: auto;
+  margin: 7px;
+}
+
+hr {
+  margin: 15px 0; 
+  border: none;
+  border-top: 1.5px solid #555;
+}
