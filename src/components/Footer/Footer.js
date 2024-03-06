@@ -3,10 +3,10 @@ import './Footer.css';
 
 import iconPhone from '../../images/icon_phone.png';
 import iconMail from '../../images/icon_mail.png';
-import logoFacebook from '../../images/logo_facebook.png';
-import logoGithub from '../../images/logo_github.png';
-import logoInstagramm from '../../images/logo_instagram.jpeg';
-import logoLinkedin from '../../images/logo_linkedin.png';
+import logoFacebook from '../../images/SocialMedias/logo_facebook.png';
+import logoGithub from '../../images/SocialMedias/logo_github.png';
+import logoInstagramm from '../../images/SocialMedias/logo_instagram.jpeg';
+import logoLinkedin from '../../images/SocialMedias/logo_linkedin.png';
 
 function Footer() {
   return (
