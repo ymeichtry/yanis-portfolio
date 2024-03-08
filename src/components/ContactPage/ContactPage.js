@@ -8,7 +8,7 @@ import logoLinkedin from '../../images/SocialMedias/logo_linkedin.png';
 
 function ContactPage() {
   return (
-    <div className="contact-container">
+    <div className="contact-page">
 
       <div className="left-column">
         <h2>Get in touch with me</h2>

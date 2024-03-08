@@ -3,7 +3,7 @@ import './SkillsPage.css';
 
 function SkillsPage() {
   return (
-    <div className="skills-container">
+    <div className="skills-page">
       <h2>My Skills</h2>
       <ul>
         <li>test</li>

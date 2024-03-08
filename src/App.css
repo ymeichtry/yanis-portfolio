@@ -17,7 +17,7 @@ header {
   z-index: 1000;
 }
 
-.main-page {
+.main-page, .skills-page, .projects-page, .contact-page {
   padding: 20px;
   margin-top: 60px; 
 }
