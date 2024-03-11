@@ -1,12 +1,12 @@
 import React from 'react';
 import './SkillsPage.css';
 
-import logohtml from '../../images/Skills/ProgrammLanguages/logo_html.png';
-import logocss from '../../images/Skills/ProgrammLanguages/logo_css.png';
-import logojavascript from '../../images//Skills/ProgrammLanguages/logo_javascript.png';
-import logotypescript from '../../images/Skills/ProgrammLanguages/logo_typescript.png';
-import logojava from '../../images/Skills/ProgrammLanguages/logo_java.png';
-import logosql from '../../images/Skills/ProgrammLanguages/logo_sql.png';
+import logohtml from '../../images/Skills/Languages/logo_html.png';
+import logocss from '../../images/Skills/Languages/logo_css.png';
+import logojavascript from '../../images//Skills/Languages/logo_javascript.png';
+import logotypescript from '../../images/Skills/Languages/logo_typescript.png';
+import logojava from '../../images/Skills/Languages/logo_java.png';
+import logosql from '../../images/Skills/Languages/logo_sql.png';
 
 import logoangular from '../../images/Skills/Technologies/logo_angular.png';
 import logoreact from '../../images/Skills/Technologies/logo_react.png';
@@ -19,7 +19,7 @@ function SkillsPage() {
   return (
     <div className="skills-page">
       <h1>My Skills</h1>
-        <h2>Programm Languages</h2>
+        <h2>Languages</h2>
             <img src={logohtml} alt="html" />
             <img src={logocss} alt="css" />
             <img src={logojavascript} alt="javascript" />
