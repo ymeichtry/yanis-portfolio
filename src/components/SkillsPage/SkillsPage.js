@@ -1,5 +1,6 @@
 import React from "react";
 import "./SkillsPage.css";
+import "./SkillsPageHover.css"
 
 import logohtml from "../../images/Skills/Languages/logo_html.png";
 import logocss from "../../images/Skills/Languages/logo_css.png";
@@ -30,8 +31,10 @@ function SkillBlock({ title, logo, levelimg, leveltext, text }) {
         <img src={levelimg} alt="skillsPagelevelImage" className="skill-levelimg"/>
         <p className="skill-leveltext">{leveltext}</p>
       </div>
-      <hr className="skill-border" /> 
-      <p className="skill-text">{text}</p>
+      <div className="skill-text-div">
+        <hr className="skill-border" /> 
+        <p className="skill-text">{text}</p>
+      </div>
     </div>
   );
 }

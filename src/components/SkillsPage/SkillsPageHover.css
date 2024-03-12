@@ -1,0 +1,12 @@
+.skill-block {
+    background-color: rgb(178, 178, 178);
+    cursor: pointer;
+}
+
+.skill-text-div {
+    display: none;
+}
+
+.skill-block:hover .skill-text-div {
+    display: block;
+}
