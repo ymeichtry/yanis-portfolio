@@ -24,10 +24,10 @@ function SkillBlock({ title, logo, levelimg, leveltext, text }) {
   return (
     <div className="skill-block">
       <h3 className="skill-title">{title}</h3>
-      <img src={logo} className="skill-logo"/>
+      <img src={logo} alt="skillsPageLogoImage" className="skill-logo"/>
       <hr className="skill-border" /> 
       <div>
-        <img src={levelimg} className="skill-levelimg"/>
+        <img src={levelimg} alt="skillsPagelevelImage" className="skill-levelimg"/>
         <p className="skill-leveltext">{leveltext}</p>
       </div>
       <hr className="skill-border" /> 
