@@ -1,6 +1,6 @@
 import React from "react";
 import "./SkillsPage.css";
-import "./SkillsPageHover.css"
+import "./SkillsPageHover.css";
 
 import logohtml from "../../images/Skills/Languages/logo_html.png";
 import logocss from "../../images/Skills/Languages/logo_css.png";
@@ -24,15 +24,20 @@ import skillbarbeginner from "../../images/Skills/SkillBar/skill_bar_beginner.pn
 function SkillBlock({ title, logo, levelimg, leveltext, text }) {
   return (
     <div className="skill-block">
-      <h3 className="skill-title">{title}</h3>
-      <img src={logo} alt="skillsPageLogoImage" className="skill-logo"/>
-      <hr className="skill-border" /> 
       <div>
-        <img src={levelimg} alt="skillsPagelevelImage" className="skill-levelimg"/>
-        <p className="skill-leveltext">{leveltext}</p>
+        <h3 className="skill-title">{title}</h3>
+        <img src={logo} alt="skillsPageLogoImage" className="skill-logo" />
+        <hr className="skill-border" />
+        <div>
+          <img
+            src={levelimg}
+            alt="skillsPagelevelImage"
+            className="skill-levelimg"
+          />
+          <p className="skill-leveltext">{leveltext}</p>
+        </div>
       </div>
       <div className="skill-text-div">
-        <hr className="skill-border" /> 
         <p className="skill-text">{text}</p>
       </div>
     </div>
@@ -50,7 +55,7 @@ function SkillsPage() {
           logo={logohtml}
           levelimg={skillbaradvanced}
           leveltext="advanced"
-          text="Test Text. this is a small text from the skill container"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non mauris vitae erat consequat auctor eu in elit. Nam nec ante id ligula tempor commodo. Duis vel sapien vitae augue fringilla consectetur. Nulla facilisi. Donec condimentum nunc ut tortor accumsan, ac gravida lorem pharetra. Quisque eget malesuada eros. Nullam sit amet dui nec justo blandit sollicitudin. Ut vitae tincidunt ante, id tempor enim. Proin suscipit libero vel est pharetra, vel aliquam dolor fermentum. Suspendisse potenti. Sed venenatis libero ac urna feugiat, et convallis urna tempor. Integer r"
         />
         <SkillBlock
           title="CSS"
@@ -91,28 +96,28 @@ function SkillsPage() {
 
       <h2>Technologies</h2>
       <div className="skill-container">
-      <SkillBlock
+        <SkillBlock
           title="Angular"
           logo={logoangular}
           levelimg={skillbarstrong}
           leveltext="strong"
           text="Test Text. this is a small text from the skill container"
         />
-      <SkillBlock
+        <SkillBlock
           title="React"
           logo={logoreact}
           levelimg={skillbaradvanced}
           leveltext="advanced"
           text="Test Text. this is a small text from the skill container"
         />
-       <SkillBlock
+        <SkillBlock
           title="SpringBoot"
           logo={logospringboot}
           levelimg={skillbarstrong}
           leveltext="strong"
           text="Test Text. this is a small text from the skill container"
         />
-       <SkillBlock
+        <SkillBlock
           title="BUN"
           logo={logobun}
           levelimg={skillbarbeginner}
@@ -126,14 +131,14 @@ function SkillsPage() {
           leveltext="intermediate"
           text="Test Text. this is a small text from the skill container"
         />
-       <SkillBlock
+        <SkillBlock
           title="Tailwind"
           logo={logotailwind}
           levelimg={skillbarintermediate}
           leveltext="intermediate"
           text="Test Text. this is a small text from the skill container"
         />
-        </div>
+      </div>
     </div>
   );
 }
