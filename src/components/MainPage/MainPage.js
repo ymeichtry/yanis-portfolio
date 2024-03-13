@@ -1,5 +1,6 @@
 import React from "react";
 import './MainPage.css';
+import './DownArrow.css';
 
 import mainImg from "../../images/profile_Image.jpeg";
 
@@ -15,6 +16,9 @@ function MainPage() {
 
           <p>This is the main page content.</p>
         </div>
+      </div>
+      <div className="second-section">
+        <div class="down-arrow"></div>
       </div>
     </div>
   );
