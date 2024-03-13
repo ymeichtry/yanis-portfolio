@@ -1,0 +1,8 @@
+.first-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-section img {
+    margin: 2%;
+}
