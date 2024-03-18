@@ -16,6 +16,11 @@ import logobun from "../../images/Skills/Technologies/logo_bun.png";
 import logobootstrap from "../../images/Skills/Technologies/logo_bootstrap.png";
 import logotailwind from "../../images/Skills/Technologies/logo_tailwind.png";
 
+import logomariadb from "../../images/Skills/Database/logo_mariadb.png";
+import logomongodb from "../../images/Skills/Database/logo_mongodb.png";
+import logomysql from "../../images/Skills/Database/logo_mysql.png";
+import logopostgres from "../../images/Skills/Database/logo_postgres.png";
+
 import skillbaradvanced from "../../images/Skills/SkillBar/skill_bar_advanced.png";
 import skillbarstrong from "../../images/Skills/SkillBar/skill_bar_strong.png";
 import skillbarintermediate from "../../images/Skills/SkillBar/skill_bar_intermediate.png";
@@ -102,42 +107,74 @@ function SkillsPage() {
           logo={logoangular}
           levelimg={skillbarstrong}
           leveltext="strong"
-          text="Test Text. this is a small text from the skill container"
+          text="Angular is an open source framework for the development of web applications that was developed by Google. I worked on a larger project in Angular and also got to know Typescript there. I really liked Angular and learned how to use components for the first time."
         />
         <SkillBlock
           title="React"
           logo={logoreact}
           levelimg={skillbaradvanced}
           leveltext="advanced"
-          text="Test Text. this is a small text from the skill container"
+          text="React is a JavaScript library that is used to develop user interfaces, especially for web applications. React is one of my favorite technologies in the programming world. This website is also made with React.js."
         />
         <SkillBlock
           title="SpringBoot"
           logo={logospringboot}
           levelimg={skillbarstrong}
           leveltext="strong"
-          text="Test Text. this is a small text from the skill container"
+          text="Spring Boot is a free framework for the development of Java applications, especially for web applications and microservices. I have developed backend applications with Spring Boot several times and also used Thymeleaf. This technology has allowed me to easily transfer data between the backend and other parts of the application."
         />
         <SkillBlock
           title="BUN"
           logo={logobun}
           levelimg={skillbarbeginner}
           leveltext="beginner"
-          text="Test Text. this is a small text from the skill container"
+          text="Bun is a fast JavaScript toolkit that helps developers to efficiently develop, test, execute and bundle JavaScript and TypeScript projects. I myself use bun.js for the backend in a project in which I use react.js for the frontend."
         />
         <SkillBlock
           title="Bootstrap"
           logo={logobootstrap}
           levelimg={skillbarintermediate}
           leveltext="intermediate"
-          text="Test Text. this is a small text from the skill container"
+          text="Bootstrap is an open-source fBootstrap is an open-source front-end web design framework that provides pre-built CSS and JavaScript components to simplify the development of responsive and user-friendly websites. I used it sometimes when I was too lazy to write CSS myself, as I did in tailwind."
         />
         <SkillBlock
           title="Tailwind"
           logo={logotailwind}
           levelimg={skillbarintermediate}
           leveltext="intermediate"
-          text="Test Text. this is a small text from the skill container"
+          text="Tailwind CSS is a CSS framework based on utility classes that allow you to define the appearance of your website directly in the HTML. I tried this like bootstrap when I was too lazy to write the css myself."
+        />
+      </div>
+
+      <h2>Database</h2>
+      <div className="skill-container">
+        <SkillBlock
+          title="MariaDB"
+          logo={logomariadb}
+          levelimg={skillbarbeginner}
+          leveltext="beginner"
+          text="MariaDB is an open source relational database management system that was created as a fork of MySQL. I was often able to learn it at school and also run databases there."
+        />
+        <SkillBlock
+          title="MongoDB"
+          logo={logomongodb}
+          levelimg={skillbarintermediate}
+          leveltext="intermediate"
+          text="MongoDB is a document-oriented NoSQL database management system designed to simplify application development and improve scalability. At vocational school, I had a whole module on MongoDB and had to set up a database there several times."
+        />
+        <SkillBlock
+          title="MySQL"
+          logo={logomysql}
+          levelimg={skillbarintermediate}
+          leveltext="intermediate"
+          text="MySQL is a relational database management system based on a client-server architecture. I was able to work with MySQL myself at school and set up and run databases with phpMyAdmin."
+        />
+        <SkillBlock
+          title="Postgres"
+          logo={logopostgres}
+          levelimg={skillbarbeginner}
+          leveltext="beginner"
+          text="PostgreSQL, often referred to simply as Postgres, is an advanced open source object-relational database management system. During my work I had several projects that were opened with a database in Postgres."
         />
       </div>
     </div>
