@@ -55,42 +55,43 @@ function SkillsPage() {
           logo={logohtml}
           levelimg={skillbaradvanced}
           leveltext="advanced"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non mauris vitae erat consequat auctor eu in elit. Nam nec ante id ligula tempor commodo. Duis vel sapien vitae augue fringilla consectetur. Nulla facilisi. Donec condimentum nunc ut tortor accumsan, ac gravida lorem pharetra. Quisque eget malesuada eros. Nullam sit amet dui nec justo blandit sollicitudin. Ut vitae tincidunt ante, id tempor enim. Proin suscipit libero vel est pharetra, vel aliquam dolor fermentum. Suspendisse potenti. Sed venenatis libero ac urna feugiat, et convallis urna tempor. Integer r"
+          text="Every software developer has heard of Hypertext Markup Language at some point. I use HTML to create the basic structure of my web pages by using tags to define elements such as headings, paragraphs, lists, and links. I use HTML every day in almost every programming project I work on."
         />
         <SkillBlock
           title="CSS"
           logo={logocss}
           levelimg={skillbaradvanced}
           leveltext="advanced"
-          text="Test Text. this is a small text from the skill container"
+          text="Cascading Style Sheets is most commonly used to design the look of websites. I use it in almost every project to set things like colors, fonts, spacing, and animations. CSS also helps websites look good on different screen sizes and offers many ways to make them more interactive."
         />
         <SkillBlock
           title="JavaScript"
           logo={logojavascript}
           levelimg={skillbarstrong}
           leveltext="strong"
-          text="Test Text. this is a small text from the skill container"
+          text="
+          JavaScript ist eine Sprache, die vor allem im Webbrowser verwendet wird. Ich mag JavaScript und habe es schon oft in meinen eigenen Anwendungen genutzt. Besonders mit React, einem beliebten JavaScript-Framework, habe ich viel gearbeitet, um interaktive Benutzeroberflächen zu erstellen."
         />
         <SkillBlock
           title="TypeScript"
           logo={logotypescript}
           levelimg={skillbarintermediate}
           leveltext="intermediate"
-          text="Test Text. this is a small text from the skill container"
+          text="TypeScript is a programming language that is based on JavaScript and offers additional functions such as static typing and object-oriented programming. I have been programming with Typescript for a long time on an Angular project."
         />
         <SkillBlock
           title="Java"
           logo={logojava}
           levelimg={skillbarintermediate}
           leveltext="intermediate"
-          text="Test Text. this is a small text from the skill container"
+          text="Java is a very popular programming language that works on many devices. I have used it a lot for creating apps, websites and other software. Java is known for its simplicity and is often used for larger projects."
         />
         <SkillBlock
           title="SQL"
           logo={logosql}
           levelimg={skillbarstrong}
           leveltext="strong"
-          text="Test Text. this is a small text from the skill container"
+          text="Structured Query Language is a special programming language that was developed for the management of relational databases. With SQL, I can retrieve, edit and manage data from a database using various operations such as SELECT, InSERT, UPDATE and DELETE. I have had at least one SQL file in every project involving a database."
         />
       </div>
 
