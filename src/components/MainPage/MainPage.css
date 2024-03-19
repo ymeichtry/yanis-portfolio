@@ -13,7 +13,32 @@
     margin-top: 15%;
 }
 
-.my-hobbies img {
+.my-hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hobbies-tech {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .my-hobbies img {
     width: 400px;
     height: 200px;
-}
+  }
+  
+  .my-hobbies div {
+    background-color: rgb(51, 51, 51);
+    width: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 15px 4px 80px rgba(0, 0, 0, 0.6);
+  }
+
+  .hobbies-tech div h3,
+  .hobbies-tech div p {
+    margin: 20px;
+    color: white;
+  }
