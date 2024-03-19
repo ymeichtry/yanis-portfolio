@@ -10,13 +10,14 @@
 }
 
 .about-me {
-    margin-top: 15%;
+    margin-top: 100px;
 }
 
 .my-hobbies {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
   }
   
   .hobbies-tech {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./MainPage.css";
 import "./DownArrow.css";
 
@@ -9,6 +9,26 @@ import musicImg from "../../images/Hobbies/image_music.png";
 import tradingImg from "../../images/Hobbies/image_trading.png";
 
 function MainPage() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const secondSection = document.querySelector(".second-section");
+      if (secondSection) {
+        const topOffset = secondSection.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (topOffset < windowHeight) {
+          secondSection.classList.add("visible");
+          window.removeEventListener("scroll", handleScroll);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="main-page">
       <div className="first-section">
@@ -21,33 +41,48 @@ function MainPage() {
           <p>This is the main page content.</p>
         </div>
       </div>
+      <div className="scroll-down-div">
+        <div class="scroll-down"></div>
+        <p>scoll Down</p>
+      </div>
       <div className="second-section">
-        <div class="down-arrow"></div>
-      </div>
-      <div class="about-me">
-        <h2>About Me</h2>
-        <p>
-          👨‍💻 Young programmer in training, mastering coding while doing my
-          Maturité studies in Zurich. I've got a thing for crafting web designs.
-        </p>
-      </div>
-      <div class="my-hobbies">
-        <h2>My Interessts</h2>
-        <div className="hobbies-tech">
-          <div>
-            <img src={programmingImg} alt="hobbiesProgrammingImg" />
-            <h3>Code</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum auctor luctus. Quisque id risus quis orci scelerisque bibendum. Nulla facilisi. Phasellus in mi justo. Vivamus quis hendrerit urna. Cras ultricies mi eu turpis hendrerit, vitae aliquet est tristique. Nulla facilisi. Nullam nec aliquam est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque ultricies diam a sapien facilisis, nec fermentum est vestibulum. Phasellus id odio suscipit, vehicula turpis vitae, eleifend turpis. Mauris non augue ut nunc gravida sollicitudin. Proin convalli</p>
-          </div>
-          <div>
-            <img src={musicImg} alt="hobbiesMusicImg" />
-            <h3>Music</h3>
-            <p></p>
-          </div>
-          <div>
-            <img src={tradingImg} alt="hobbiesTradingImg" />
-            <h3>Trade</h3>
-            <p></p>
+        <div className="about-me">
+          <h2>About Me</h2>
+          <p>
+            👨‍💻 Young programmer in training, mastering coding while doing my
+            Maturité studies in Zurich. I've got a thing for crafting web
+            designs.
+          </p>
+        </div>
+        <div className="my-hobbies">
+          <h2>My Interests</h2>
+          <div className="hobbies-tech">
+            <div>
+              <img src={programmingImg} alt="hobbiesProgrammingImg" />
+              <h3>Code</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                fermentum auctor luctus. Quisque id risus quis orci scelerisque
+                bibendum. Nulla facilisi. Phasellus in mi justo. Vivamus quis
+                hendrerit urna. Cras ultricies mi eu turpis hendrerit, vitae
+                aliquet est tristique. Nulla facilisi. Nullam nec aliquam est.
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas. Quisque ultricies diam a
+                sapien facilisis, nec fermentum est vestibulum. Phasellus id
+                odio suscipit, vehicula turpis vitae, eleifend turpis. Mauris
+                non augue ut nunc gravida sollicitudin. Proin convalli
+              </p>
+            </div>
+            <div>
+              <img src={musicImg} alt="hobbiesMusicImg" />
+              <h3>Music</h3>
+              <p></p>
+            </div>
+            <div>
+              <img src={tradingImg} alt="hobbiesTradingImg" />
+              <h3>Trade</h3>
+              <p></p>
+            </div>
           </div>
         </div>
       </div>
