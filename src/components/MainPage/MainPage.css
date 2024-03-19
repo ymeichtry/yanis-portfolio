@@ -5,6 +5,12 @@
 
 .first-section img {
     margin: 2%;
+    height: 30%;
+    width: 30%;
+}
+
+.about-me {
+    margin-top: 15%;
 }
 
 .my-hobbies img {
