@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b7478f54.css",
+    "main.js": "/static/js/main.f487d18a.js",
+    "static/media/image_trading.png": "/static/media/image_trading.f1c02213d1556b3c522b.png",
+    "static/media/logo_mysql.png": "/static/media/logo_mysql.167c88550478e6f0f85c.png",
+    "static/media/logo_instagram.jpeg": "/static/media/logo_instagram.f5b875373119b7dfcfcd.jpeg",
+    "static/media/logo_java.png": "/static/media/logo_java.d3bf0b8bb34c8459667a.png",
+    "static/media/image_music.png": "/static/media/image_music.26a51a8a632008147d2f.png",
+    "static/media/image_programming.png": "/static/media/image_programming.a22daf36454a01dc0f87.png",
+    "static/media/logo_react.png": "/static/media/logo_react.f6b89d232c9bc9f828e5.png",
+    "static/media/profile_Image.jpeg": "/static/media/profile_Image.23da661e5e47f5a8ce29.jpeg",
+    "static/media/skill_bar_strong.png": "/static/media/skill_bar_strong.896644b0b56ff9a91d25.png",
+    "static/media/logo_bootstrap.png": "/static/media/logo_bootstrap.3fa946b621297cd902db.png",
+    "static/media/logo_facebook.png": "/static/media/logo_facebook.2cb6faa66c76da03ec89.png",
+    "static/media/logo_angular.png": "/static/media/logo_angular.90b4ef22b8607d6bd461.png",
+    "static/media/skill_bar_intermediate.png": "/static/media/skill_bar_intermediate.9c121428d00410bc131e.png",
+    "static/media/logo_linkedin.png": "/static/media/logo_linkedin.cd71fb396f73fb1f27d4.png",
+    "static/media/logo_postgres.png": "/static/media/logo_postgres.bcfad2c969edb986ce7e.png",
+    "static/media/skill_bar_advanced.png": "/static/media/skill_bar_advanced.43370a51b584dd405d02.png",
+    "static/media/skill_bar_beginner.png": "/static/media/skill_bar_beginner.ca4b87359c6139caaad6.png",
+    "static/media/logo_springboot.png": "/static/media/logo_springboot.94f201ce44348763e6a5.png",
+    "static/media/logo_css.png": "/static/media/logo_css.84de5dab5fab27f4161c.png",
+    "static/media/logo_bun.png": "/static/media/logo_bun.dde53fac197f6de2d666.png",
+    "static/media/logo_mariadb.png": "/static/media/logo_mariadb.72ac960e79d3481a0801.png",
+    "static/media/logo_sql.png": "/static/media/logo_sql.527d73184438411e95e8.png",
+    "static/media/logo_tailwind.png": "/static/media/logo_tailwind.39138a421122620729a5.png",
+    "static/media/logo_html.png": "/static/media/logo_html.ff3cf75e3b7cbb4ea77c.png",
+    "static/media/logo_mongodb.png": "/static/media/logo_mongodb.2178943141ba7e7fae4e.png",
+    "index.html": "/index.html",
+    "main.b7478f54.css.map": "/static/css/main.b7478f54.css.map",
+    "main.f487d18a.js.map": "/static/js/main.f487d18a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7478f54.css",
+    "static/js/main.f487d18a.js"
+  ]
+}
