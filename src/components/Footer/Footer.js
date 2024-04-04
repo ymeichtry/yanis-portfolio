@@ -3,6 +3,7 @@ import './Footer.css';
 
 import iconPhone from '../../images/icon_phone.png';
 import iconMail from '../../images/icon_mail.png';
+import iconLocation from '../../images/icon_location.png';
 import logoFacebook from '../../images/SocialMedias/logo_facebook.png';
 import logoGithub from '../../images/SocialMedias/logo_github.png';
 import logoInstagramm from '../../images/SocialMedias/logo_instagram.jpeg';
@@ -19,6 +20,10 @@ function Footer() {
         <div className="contact-item">
           <img src={iconMail} alt="Mail"/>
           <span>y.meichtry@gmx.ch</span>
+        </div>
+        <div className="contact-item">
+          <img src={iconLocation} alt="Location"/>
+          <span>Zürich, Switzerland</span>
         </div>
         <div className="footer-social-media">
           <a href="https://www.instagram.com/y.meichtry/" target="_blank" rel="noopener noreferrer">
