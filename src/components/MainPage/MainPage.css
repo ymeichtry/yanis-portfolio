@@ -1,45 +1,69 @@
 .first-section {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .first-section img {
-    margin: 2%;
-    height: 30%;
-    width: 30%;
+  margin: 2%;
+  height: 30%;
+  width: 30%;
 }
 
 .about-me {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .my-hobbies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-  
-  .hobbies-tech {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .my-hobbies img {
-    width: 400px;
-    height: 200px;
-  }
-  
-  .my-hobbies div {
-    background-color: rgb(51, 51, 51);
-    width: 400px;
-    margin-left: 10%;
-    margin-right: 10%;
-    box-shadow: 15px 4px 80px rgba(0, 0, 0, 0.6);
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
 
-  .hobbies-tech div h3,
-  .hobbies-tech div p {
-    margin: 20px;
-    color: white;
-  }
+.hobbies-tech {
+  display: flex;
+  justify-content: center;
+}
+
+.my-hobbies img {
+  width: 400px;
+  height: 200px;
+}
+
+.my-hobbies div {
+  background-color: rgb(51, 51, 51);
+  width: 400px;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 15px 4px 80px rgba(0, 0, 0, 0.6);
+}
+
+.hobbies-tech div h3,
+.hobbies-tech div p {
+  margin: 20px;
+  color: white;
+}
+
+/* slide in first-section */
+
+.slide-from-right {
+opacity: 0;
+transform: translateX(100%);
+transition: opacity 1s ease-in-out, transform 1s ease-in-out; 
+}
+
+.slide-from-right.show {
+opacity: 1; 
+transform: translateX(0%); 
+}
+
+.slide-in {
+opacity: 0;
+transform: translateX(-100%); 
+transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.slide-in.show {
+opacity: 1;
+transform: translateX(0%);
+}

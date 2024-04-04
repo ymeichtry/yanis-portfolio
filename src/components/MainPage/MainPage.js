@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./MainPage.css";
 import "./DownArrow.css";
 
@@ -9,6 +9,12 @@ import musicImg from "../../images/Hobbies/image_music.png";
 import tradingImg from "../../images/Hobbies/image_trading.png";
 
 function MainPage() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       const secondSection = document.querySelector(".second-section");
@@ -32,12 +38,11 @@ function MainPage() {
   return (
     <div className="main-page">
       <div className="first-section">
-        <img src={mainImg} alt="main-Img" />
-        <div className="content">
+        <img src={mainImg} alt="main-Img" className={isLoaded ? 'slide-in show' : 'slide-in'} />
+        <div className={isLoaded ? 'content slide-from-right show' : 'content slide-from-right'}>
           <h1>I'm Yanis Meichtry</h1>
           <h1>A Software Programmer</h1>
           <h1>based in Zürich</h1>
-
           <p>This is the main page content.</p>
         </div>
       </div>
