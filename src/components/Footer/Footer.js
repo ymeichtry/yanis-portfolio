@@ -15,11 +15,11 @@ function Footer() {
       <div className="contact-info">
         <div className="contact-item">
           <img src={iconPhone} alt="Phone"/>
-          <span>+41 77 527 04 79</span>
+          <span>Private</span>
         </div>
         <div className="contact-item">
           <img src={iconMail} alt="Mail"/>
-          <span>y.meichtry@gmx.ch</span>
+          <span>Private</span>
         </div>
         <div className="contact-item">
           <img src={iconLocation} alt="Location"/>
