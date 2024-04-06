@@ -94,7 +94,7 @@ function MainPage() {
               <img src={musicImg} alt="hobbiesMusicImg" />
               <h3>Music</h3>
               <p>
-                🎵 In addition to my interest in technology, music is an
+                🎙️ In addition to my interest in technology, music is an
                 essential part of my life.
               </p>
               <p>
