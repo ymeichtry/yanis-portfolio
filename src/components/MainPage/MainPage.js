@@ -46,10 +46,7 @@ function MainPage() {
           <p>This is the main page content.</p>
         </div>
       </div>
-      <div className="scroll-down-div">
-        <div class="scroll-down"></div>
-        <p>scoll Down</p>
-      </div>
+
       <div className="second-section">
         <div className="about-me">
           <h2>About Me</h2>
