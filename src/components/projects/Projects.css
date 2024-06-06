@@ -1,0 +1,203 @@
+.projects {
+  width: 100%;
+  /* margin: 50px 15%; */
+}
+.projects h2 {
+  color: var(--green);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.projects h2::after {
+  content: "";
+  display: block;
+  position: relative;
+  align-self: center;
+  top: 4px;
+  width: 50%;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #233554;
+}
+/* WHEN IMG IS IN IMG TAG  */
+.projects .project-container {
+  padding: 50px 0px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+.projects .project-container .container-img {
+  grid-column: 2 / 5;
+  z-index: 3;
+}
+.project-container.left-container .container-img {
+  grid-column: 5 / 8;
+  z-index: 3;
+}
+.projects .project-container .project-img img {
+  pointer-events: none;
+  width: 100%;
+  transition: 0.5s ease all;
+  opacity: 0.6;
+  border-radius: 3px;
+}
+.projects .project-container .project-img:hover img {
+  opacity: 1;
+}
+
+.left-container .container-content {
+  position: relative;
+  /* right: 0px; */
+  display: flex;
+  width: 100%;
+  z-index: 4;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: 5 / 2;
+}
+.right-container .container-content {
+  position: relative;
+  /* right: 230px; */
+  display: flex;
+  width: 100%;
+  z-index: 4;
+  flex-direction: column;
+  align-items: flex-end;
+  grid-column: 5 / 8;
+}
+.container-content .project-overline {
+  color: var(--green);
+  margin: 0;
+  font-size: 14px;
+  font-family: var(--ptfont);
+}
+.container-content h3 {
+  margin: 10px 0;
+  color: var(--lightest-navy);
+  font-size: 27px;
+  font-family: var(--lato);
+}
+.container-content .Project-desc {
+  background-color: var(--Yankees-Blue);
+  color: var(--light-Yankees-Blue);
+  padding: 6px 30px;
+  margin: 10px 0;
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  width: 100%;
+  font-size: 16px;
+  font-family: var(--ptfont);
+  border-radius: 3px;
+}
+.container-content .project-tech {
+  list-style: none;
+  display: flex;
+  font-family: var(--ptfont);
+  padding-left: 0;
+}
+.container-content .project-tech li:first-child {
+  padding: 0;
+}
+.container-content .project-tech li {
+  padding-left: 15px;
+}
+.container-content .project-link {
+  display: flex;
+  gap: 15px;
+}
+.container-content .project-link a svg {
+  color: var(--green);
+  width: 22px;
+}
+.projects .showmore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 0 0;
+}
+.projects .showmore button {
+  background-color: transparent;
+  border: 1px solid var(--green);
+  color: var(--lightest-navy);
+  width: 190px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: var(--ptfont);
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+.projects .showmore button:hover {
+  background-color: rgba(219, 100, 255, 0.1);
+}
+@media only screen and (max-width: 460px) {
+  .projects {
+    padding: 0px 0%;
+    margin: 2rem 0%;
+  }
+  .projects h2 {
+    margin: 0;
+    font-size: 20px;
+    justify-content: center;
+  }
+  .projects h2::after {
+    width: 10%;
+  }
+  .projects .project-container {
+    padding: 30px 0 0 0;
+    gap: 0px;
+  }
+  .projects .project-container .container-img {
+    width: 100%;
+    grid-column: 2 / 8;
+  }
+  .projects .project-container .project-img {
+    height: 150px;
+    background-position: center;
+  }
+  .left-container .container-img {
+    right: 0px;
+    position: relative;
+  }
+  .projects .project-container .project-img .img-layer {
+    width: 0;
+  }
+  .right-container .container-content,
+  .left-container .container-content {
+    right: 0;
+    width: 88%;
+    align-items: center;
+    text-align: center;
+    grid-column: 2 / 9;
+  }
+  /* .right-container .container-content {
+    padding: 1rem 0 0 0;
+  } */
+  .left-container .container-content {
+    order: 1;
+    padding: 0;
+  }
+  .container-content .project-overline {
+    display: none;
+  }
+  .container-content h3 {
+    font-size: 18px;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+  .container-content .Project-desc {
+    padding: 0 10px;
+    font-size: 12px;
+    width: auto;
+  }
+  .container-content .project-tech {
+    font-size: 12px;
+  }
+  .container-content .project-link a svg {
+    width: 20px;
+  }
+  .projects .showmore button {
+    height: 40px;
+    width: 140px;
+  }
+}

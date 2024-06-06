@@ -1,0 +1,228 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.profile {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  /* gap: 50px; */
+  padding: 0 10% 0;
+}
+.profile .profile-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  animation: profiletext 2000ms;
+}
+.profile .profile-text h1 {
+  font-family: "Lato", sans-serif;
+  color: var(--lightest-navy);
+  /* padding: 5px 0; */
+  margin: 5px 0 0 0;
+  font-size: clamp(40px, 8vw, 50px);
+  animation: profiletitle 1000ms;
+}
+.profile .profile-text h1 img {
+  padding: 0px 10px;
+}
+.profile .profile-text p:first-child {
+  margin: 0px 0px 5px 4px;
+  font-weight: 400;
+  color: var(--lightest-navy);
+  animation: profilesubtitle 1000ms;
+}
+.profile .profile-text p {
+  font-family: "PT Sans", sans-serif;
+  margin: 20px 0px 20px 0px;
+}
+.profile .profile-text .profile-text-about {
+  width: 100%;
+  animation: profileabout 1000ms;
+  animation-delay: 100ms;
+}
+.profile .profile-social-links a {
+  margin-inline-end: 12px;
+}
+.profile .profile-text a svg {
+  height: 26px;
+  width: 26px;
+}
+.profile .profile-text a svg:hover {
+  color: var(--green);
+}
+.profile .profile-img {
+  text-align: center;
+  width: 40%;
+  pointer-events: none;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+}
+.profile .profile-img img {
+  width: 70%;
+  border-radius: 40%;
+  object-fit: cover;
+  z-index: 1;
+}
+.profile .profile-text button {
+  /* background-color: #414244; */
+  background-color: transparent;
+  border: 1px solid var(--green);
+  color: var(--lightest-navy);
+  margin: 20px 0 0 0;
+  width: 190px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+.profile .profile-text button:hover {
+  background-color: rgba(168, 168, 255, 0.057);
+}
+
+@keyframes profiletext {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes profiletitle {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes profilesubtitle {
+  0% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes profileabout {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .profile {
+    gap: 0px;
+    justify-content: center;
+    padding: 0 5% 0;
+    height: 70vh;
+  }
+  .profile .profile-text h1 {
+    font-size: 25px;
+  }
+  .profile .profile-text p {
+    font-size: 15px;
+    margin: 10px 0px 10px 0px;
+  }
+  .profile .profile-text p:first-child {
+    margin: 0px 0px 2px 4px;
+  }
+  .profile .profile-text a svg {
+    width: 20px;
+    height: 20px;
+  }
+  .profile .profile-text button {
+    height: 30px;
+    width: 100px;
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  .profile .profile-img img {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .profile {
+    flex-direction: column-reverse;
+    padding: 38px 5% 0;
+    height: 50vh;
+    margin-top: 50px;
+  }
+  .profile .profile-text {
+    text-align: left;
+    padding: 15px 0 0 0;
+    width: 90%;
+    gap: 5px;
+  }
+  .profile .profile-text h1 {
+    font-size: 30px;
+  }
+  .profile .profile-text p {
+    font-size: 15px;
+  }
+  .profile .profile-img img {
+    width: 90%;
+  }
+  .profile .profile-text button {
+    margin: 10px 0 0 0;
+    height: 40px;
+    width: 140px;
+  }
+}
+
+/* hero img */
+@keyframes float {
+  0% {
+    transform: translateY(7px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(7px);
+  }
+}
+
+.img-container {
+  z-index: 1;
+  animation: float 6s ease-in-out infinite;
+  animation-play-state: running;
+  padding-left: 35px;
+
+  @media (max-width: 1240px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+  @media (max-width: 460px) {
+    display: none;
+  }
+}

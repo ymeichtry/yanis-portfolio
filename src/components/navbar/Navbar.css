@@ -1,0 +1,191 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0px;
+  z-index: 99;
+  width: 100vw;
+}
+.res-nav {
+  display: none;
+}
+.res-nav-overlay{
+  display: none;
+}
+.scroll .navbar {
+  transition: 0.5s ease all;
+  animation: 0.5s navanimate;
+  box-shadow: 0 10px 30px -10px var(--navy-shadow);
+  backdrop-filter: saturate(130%) blur(14px);
+}
+@keyframes navanimate {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.navbar h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+}
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.navbar ul li {
+  font-family: "PT Sans", sans-serif;
+  padding: 0 20px;
+  font-size: 18px;
+}
+.navbar ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--light-navy);
+}
+.navbar ul li a.active {
+  color: var(--green);
+}
+.navbar ul li a:hover {
+  transition: 0.4s all ease;
+  border-bottom: 1px solid white;
+  color: var(--green);
+}
+.navbar ul li button {
+  background-color: transparent;
+  border: none;
+  margin: auto;
+  cursor: pointer;
+  width: 32px;
+}
+.navbar ul li button svg {
+  height: 18px;
+  color: var(--light-navy);
+  padding-top: 7px;
+}
+/* .navbar ul li #moon{
+    display: none;
+} */
+.none {
+  display: none;
+}
+.block {
+  display: block;
+  opacity: 1;
+}
+.navbar-btn {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .navbar h1 {
+    font-size: 20px;
+  }
+  .navbar ul li {
+    padding: 0 10px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .navbar {
+    margin: 0 0;
+    justify-content: space-between;
+    height: 90px;
+  }
+  .navbar h1::before {
+    content: "";
+    padding: 0 10px;
+  }
+  .navbar .navbar-btn::after {
+    content: "";
+    padding: 0 10px;
+  }
+  .navbar h1 {
+    font-size: 25px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar ul li {
+    font-size: 10px;
+  }
+  .navbar ul li button svg {
+    height: 14px;
+  }
+  .navbar-btn {
+    display: block;
+  }
+
+  .navbar-btn button {
+    background-color: transparent;
+    border: none;
+  }
+  .navbar-btn button #navopen {
+    transform: rotate(270deg);
+  }
+  /* res nav css  */
+  .res-nav {
+    overflow: hidden;
+    position: fixed;
+    right: 0px;
+    z-index: 9;
+    width: 55vw;
+    height: 100vh;
+    background-color: var(--Yankees-Blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transform: translateX(300px);
+    transition: 0.2s ease-in;
+    top: 0;
+  }
+  .res-nav-active .res-nav {
+    transform: translateX(0px);
+  }
+  .res-nav-active .res-nav-overlay {
+    display: block;
+  }
+  .res-nav-links {
+    width: 100%;
+  }
+  .res-nav-links ul {
+    list-style: none;
+    padding: 0;
+    font-family: var(--ptfont);
+    font-weight: 600;
+  }
+  .res-nav-links ul li {
+    font-size: 19px;
+    padding: 7px 0;
+    text-align: center;
+  }
+  .res-nav-links ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .res-nav-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in;
+  }
+  .mobile-light-mode{
+    padding-top: 4px;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
