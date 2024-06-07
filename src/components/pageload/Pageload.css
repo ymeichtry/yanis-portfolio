@@ -1,0 +1,16 @@
+.page-load {
+  width: 99%;
+  height: 97vh;
+  background-color: var(--navy);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-load h1 {
+  font-size: 50px;
+  font-family: var(--lato);
+}
+.fade {
+  opacity: 0;
+  display: none;
+}
