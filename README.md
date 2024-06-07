@@ -21,4 +21,4 @@ I believe in the power of collaboration and the value of connections. If you hav
 
 ---
 
-Thank you for visiting Meichtry.dev!
+Thank you for visiting meichtry.dev!
