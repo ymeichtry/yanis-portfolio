@@ -1,6 +1,6 @@
 <div align="center">
 <h1>Meichtry.dev</h1>
-<a href="https://meichtry.dev/">Meichtry.dev</a> built with React.js<br/>
+<a href="https://yanis-portfolio.vercel.app/">Meichtry.dev</a> built with React.js<br/>
 </div>
 <br>
 <br>
