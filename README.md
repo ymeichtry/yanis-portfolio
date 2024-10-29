@@ -1,6 +1,6 @@
 <div align="center">
-<h1>Meichtry.dev</h1>
-<a href="https://meichtry.dev/">Meichtry.dev</a> built with React.js<br/>
+<h1>yanis.meichtry.dev</h1>
+<a href="https://yanis.meichtry.dev">yanis.meichtry.dev</a> built with React.js<br/>
 </div>
 <br>
 <br>
@@ -9,7 +9,7 @@
 
 ## 🌟 About
 
-Welcome to Meichtry.dev! This website showcases my personal portfolio, featuring projects, skills, and more. Built with React.js, it highlights my journey and interests in programming, music, and finance.
+Welcome to yanis.meichtry.dev! This website showcases my personal portfolio, featuring projects, skills, and more. Built with React.js, it highlights my journey and interests in programming, music, and finance.
 
 ## 🛠️ Features
 
@@ -21,4 +21,4 @@ I believe in the power of collaboration and the value of connections. If you hav
 
 ---
 
-Thank you for visiting meichtry.dev!
+Thank you for visiting [yanis.meichtry.dev](https://yanis.meichtry.dev)!
