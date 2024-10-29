@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Homepage from "./Pages/Homepage.tsx";
-import Pageload from "./Components/pageload/Pageload.tsx";
+import Pageload from "./components/pageload/Pageload.tsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
