@@ -1,7 +1,7 @@
 import "./Projects.css";
 
-const pimg2 = require("../../img/pimg2.webp");
-const pimg4 = require("../../img/pimg4.webp");
+const pimg2 = require("../../images/pimg2.webp");
+const pimg4 = require("../../images/pimg4.webp");
 
 function Projects() {
   return (
