@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface MobilenavProps {
   nightLightMode: () => void;
@@ -20,10 +21,10 @@ const Mobilenav: React.FC<MobilenavProps> = ({
             <a href="#profile">Home</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link to="/blogs">Blogs</Link>
           </li>
           <li>
           <button className="mobile-light-mode" id="nightlightmode" onClick={nightLightMode}>

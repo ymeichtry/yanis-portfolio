@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({
           <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/blogs">Blogs</Link>
         </li>
         <li>
           <button id="nightlightmode" onClick={nightLightMode}>
