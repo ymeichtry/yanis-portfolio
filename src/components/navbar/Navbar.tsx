@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 interface NavbarProps {
@@ -24,22 +25,20 @@ const Navbar: React.FC<NavbarProps> = ({
     document.body.classList.toggle("scroll", window.scrollY > 130);
   };
 
-  
-
   return (
     <nav className="navbar nav">
-      <a href="#profile">
+      <Link to="/">
         <h1> &lt; ymeichtry /&gt;</h1>
-      </a>
+      </Link>
       <ul>
         <li>
-          <a href="#profile">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
           <button id="nightlightmode" onClick={nightLightMode}>
@@ -85,7 +84,7 @@ const Navbar: React.FC<NavbarProps> = ({
             height="30"
             viewBox="0 0 24 24"
             fill="none"
-            stroke={`${Theme === "dark" ? '#ffffff' : '#000000'} `}
+            stroke={`${Theme === "dark" ? "#ffffff" : "#000000"} `}
             strokeWidth="2"
             strokeLinecap="butt"
             strokeLinejoin="bevel"
@@ -103,7 +102,7 @@ const Navbar: React.FC<NavbarProps> = ({
             height="30"
             viewBox="0 0 24 24"
             fill="none"
-            stroke={`${Theme === "dark" ? '#ffffff' : '#000000'} `}
+            stroke={`${Theme === "dark" ? "#ffffff" : "#000000"} `}
             strokeWidth="2"
             strokeLinecap="butt"
             strokeLinejoin="bevel"
