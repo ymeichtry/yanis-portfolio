@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'; // Router-Link für Navigation
 import Navbar from "../components/navbar/Navbar";
 import Mobilenav from "../components/navbar/Mobilenav";
 
@@ -38,10 +39,9 @@ const BlogPage: React.FC = () => {
   };
 
   useEffect(() => {
-    // Posts
     const examplePosts = [
-      { id: 1, title: "first Blog-Post", content: "This is my first Post", date: "2023-10-01" },
-      { id: 2, title: "second Blog-Post", content: "This is my second Post and another Post for you guys :)", date: "2023-11-01" },
+      { id: 1, title: "First Blog Post", content: "This is my first post.", date: "2023-10-01" },
+      { id: 2, title: "Second Blog Post", content: "This is my second post with more details.", date: "2023-11-01" },
     ];
     setPosts(examplePosts);
 
@@ -81,12 +81,15 @@ const BlogPage: React.FC = () => {
       />
       <main style={{ padding: "20px" }}>
         <h1>Blog</h1>
-        <section>
+        <section style={{ display: "grid", gap: "20px" }}>
           {posts.map((post) => (
-            <article key={post.id} style={{ marginBottom: "20px" }}>
+            <article key={post.id} style={{
+              padding: "20px", borderRadius: "8px", backgroundColor: "#f0f0f0", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)"
+            }}>
               <h2>{post.title}</h2>
               <p><i>{post.date}</i></p>
-              <p>{post.content}</p>
+              <p>{post.content.slice(0, 100)}...</p>
+              <Link to={`/blog/${post.id}`} style={{ color: "blue", textDecoration: "underline" }}>Read more</Link>
             </article>
           ))}
         </section>
