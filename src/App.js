@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from "./Pages/Homepage";
 import ProjectsPage from "./Pages/ProjectsPage";
 import BlogPage from "./Pages/BlogPage";
+import BlogDetailPage from './Pages/BlogDetailPage';
 import Pageload from "./components/pageload/Pageload";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/blogs" element={<BlogPage />} />
+          <Route path="/blog/:id" element={<BlogDetailPage />} />
         </Routes>
       </div>
     </Router>
