@@ -1,55 +1,81 @@
 :root {
-  --navy: #110d14; 
-  --lightest-navy: #ccd9f6;
-  --light-navy: #8896b0;
-  --green: #cb0066;
-  --light-green: rgba(255, 0, 0, 0.1);
-  --Yankees-Blue: #270b24;
-  --light-Yankees-Blue: #dfd9ef;
-  --navy-shadow: rgba(55, 11, 69, 0.7);
-  --lato: "Lato", sans-serif;
-  --ptfont: "PT Sans", sans-serif;
+  --black: #000000;
+  --white: #ffffff;
+  --gray-900: #111111;
+  --gray-800: #1a1a1a;
+  --gray-700: #2a2a2a;
+  --gray-600: #404040;
+  --gray-500: #666666;
+  --gray-400: #999999;
+  --gray-300: #cccccc;
+  --gray-200: #e5e5e5;
+  --gray-100: #f5f5f5;
+  --accent: #000000;
+  --accent-light: rgba(0, 0, 0, 0.1);
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --lato: "Inter", "Lato", sans-serif;
+  --ptfont: "Inter", "PT Sans", sans-serif;
   --filter: none;
 }
 ::selection {
-  background-color: var(--lightest-navy);
-  color: var(--navy);
+  background-color: var(--accent-light);
+  color: var(--black);
 }
 ::-webkit-scrollbar {
-  width: 5px;
-  background: var(--navy);
+  width: 8px;
+  background: var(--white);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--light-navy);
-  -webkit-border-radius: 1ex;
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+  background: var(--gray-400);
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-600);
+}
+
 .page-load {
   width: 100%;
   height: 100vh;
-  background-color: var(--navy);
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
-  background-color: var(--navy);
-  color: var(--light-navy);
+  background-color: var(--white);
+  color: var(--black);
   overflow-x: hidden;
-  transition: 0.6s background-color ease;
+  font-family: var(--lato);
+  line-height: 1.6;
+  transition: all 0.3s ease;
 }
 
-body.light {
-  --navy: #eeeeee;
-  --lightest-navy: #2c2231;
-  --light-navy: #413946;
-  --green: #cb0066;
-  --Yankees-Blue: rgb(233, 227, 236);
-  --light-Yankees-Blue: rgb(52, 42, 42);
-  --navy-shadow: rgba(57, 39, 63, 0.7);
-  --filter: invert(1);
+body.dark {
+  --white: #000000;
+  --black: #ffffff;
+  --gray-900: #eeeeee;
+  --gray-800: #e5e5e5;
+  --gray-700: #d5d5d5;
+  --gray-600: #bfbfbf;
+  --gray-500: #999999;
+  --gray-400: #666666;
+  --gray-300: #333333;
+  --gray-200: #1a1a1a;
+  --gray-100: #0a0a0a;
+  --accent: #ffffff;
+  --accent-light: rgba(255, 255, 255, 0.1);
+  --shadow: rgba(255, 255, 255, 0.1);
+  --shadow-dark: rgba(255, 255, 255, 0.3);
 }
 body.res-nav-active {
   overflow: hidden;

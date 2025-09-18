@@ -2,11 +2,13 @@
   "compilerOptions": {
     "target": "es6",
     "module": "esnext",
+    "moduleResolution": "node",
     "jsx": "react-jsx",
     "outDir": "./dist",
     "strict": true,
     "noImplicitAny": true,
     "noEmit": true,
+    "skipLibCheck": true,
     "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true
   },

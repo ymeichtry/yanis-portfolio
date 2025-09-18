@@ -1,135 +1,225 @@
 .projects {
   width: 100%;
-  /* margin: 50px 15%; */
+  padding: 120px 5% 80px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
+
 .projects h2 {
-  color: var(--green);
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
+  color: var(--black);
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  font-family: var(--lato);
 }
+
+.projects h2::before {
+  content: "02.";
+  color: var(--gray-400);
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 400;
+  margin-right: 10px;
+}
+
 .projects h2::after {
   content: "";
   display: block;
-  position: relative;
-  align-self: center;
-  top: 4px;
-  width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 200px;
   height: 1px;
-  margin-left: 20px;
-  background-color: #233554;
+  background-color: var(--gray-300);
+  transform: translateY(-50%);
 }
-/* WHEN IMG IS IN IMG TAG  */
 .projects .project-container {
-  padding: 50px 0px;
+  padding: 60px 0;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 100px;
 }
 .projects .project-container .container-img {
-  grid-column: 2 / 5;
+  grid-column: 1 / 7;
   z-index: 3;
+  position: relative;
 }
 .project-container.left-container .container-img {
-  grid-column: 5 / 8;
+  grid-column: 7 / 13;
   z-index: 3;
+  position: relative;
 }
+.projects .project-container .project-img {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--gray-100);
+  transition: all 0.3s ease;
+}
+
 .projects .project-container .project-img img {
-  pointer-events: none;
   width: 100%;
-  transition: 0.5s ease all;
-  opacity: 0.6;
-  border-radius: 3px;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  opacity: 0.8;
 }
+
+.projects .project-container .project-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px var(--shadow);
+}
+
 .projects .project-container .project-img:hover img {
   opacity: 1;
+  transform: scale(1.05);
 }
 
 .left-container .container-content {
   position: relative;
-  /* right: 0px; */
   display: flex;
   width: 100%;
   z-index: 4;
   flex-direction: column;
   align-items: flex-start;
-  grid-column: 5 / 2;
+  grid-column: 1 / 6;
+  padding-right: 40px;
 }
 .right-container .container-content {
   position: relative;
-  /* right: 230px; */
   display: flex;
   width: 100%;
   z-index: 4;
   flex-direction: column;
   align-items: flex-end;
-  grid-column: 5 / 8;
+  grid-column: 7 / 13;
+  padding-left: 40px;
+  text-align: right;
 }
 .container-content .project-overline {
-  color: var(--green);
-  margin: 0;
+  color: var(--black);
+  margin: 0 0 10px 0;
   font-size: 14px;
   font-family: var(--ptfont);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .container-content h3 {
-  margin: 10px 0;
-  color: var(--lightest-navy);
-  font-size: 27px;
+  margin: 0 0 20px 0;
+  color: var(--black);
+  font-size: clamp(24px, 4vw, 32px);
   font-family: var(--lato);
+  font-weight: 700;
+  line-height: 1.2;
 }
 .container-content .Project-desc {
-  background-color: var(--Yankees-Blue);
-  color: var(--light-Yankees-Blue);
-  padding: 6px 30px;
-  margin: 10px 0;
-  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  background-color: var(--gray-100);
+  color: var(--gray-700);
+  padding: 24px;
+  margin: 0 0 20px 0;
+  box-shadow: 0 4px 20px var(--shadow);
   width: 100%;
   font-size: 16px;
   font-family: var(--ptfont);
-  border-radius: 3px;
+  border-radius: 8px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
 }
 .container-content .project-tech {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   font-family: var(--ptfont);
-  padding-left: 0;
-}
-.container-content .project-tech li:first-child {
   padding: 0;
+  margin: 0 0 20px 0;
 }
 .container-content .project-tech li {
-  padding-left: 15px;
+  background-color: var(--gray-200);
+  color: var(--gray-700);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.container-content .project-tech li:hover {
+  background-color: var(--black);
+  color: var(--white);
+  transform: translateY(-2px);
 }
 .container-content .project-link {
   display: flex;
-  gap: 15px;
+  gap: 20px;
+}
+.container-content .project-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--gray-100);
+  color: var(--gray-600);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.container-content .project-link a:hover {
+  background-color: var(--black);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--shadow);
 }
 .container-content .project-link a svg {
-  color: var(--green);
-  width: 22px;
+  width: 20px;
+  height: 20px;
 }
 .projects .showmore {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 0 0 0;
+  margin: 80px 0 0 0;
 }
 .projects .showmore button {
   background-color: transparent;
-  border: 1px solid var(--green);
-  color: var(--lightest-navy);
-  width: 190px;
-  height: 50px;
-  border-radius: 10px;
+  border: 2px solid var(--black);
+  color: var(--black);
+  width: 200px;
+  height: 56px;
+  border-radius: 8px;
   font-family: var(--ptfont);
-  font-size: 17px;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.5s ease all;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.projects .showmore button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  transition: left 0.3s ease;
+  z-index: -1;
 }
 .projects .showmore button:hover {
-  background-color: rgba(219, 100, 255, 0.1);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--shadow);
+}
+.projects .showmore button:hover::before {
+  left: 0;
 }
 @media only screen and (max-width: 460px) {
   .projects {

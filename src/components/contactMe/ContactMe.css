@@ -1,55 +1,110 @@
 .contactme {
   width: 100%;
-  height: 90vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.contactme .contactme-title h2 {
-  font-size: 60px;
-  color: var(--green);
-  padding: 0;
-  margin: 0;
-}
-.contactme .contactme-desc p {
-  font-size: 20px;
-  white-space: pre-wrap;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  line-height: 30px;
-  padding: 15px 20%;
+  padding: 120px 5% 80px;
+  max-width: 1400px;
+  margin: 0 auto;
   text-align: center;
-  
 }
+
+.contactme .contactme-title h2 {
+  font-size: clamp(48px, 8vw, 72px);
+  color: var(--black);
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: var(--lato);
+  font-weight: 700;
+  position: relative;
+}
+
+.contactme .contactme-title h2::before {
+  content: "03.";
+  color: var(--gray-400);
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.contactme .contactme-desc p {
+  font-size: clamp(18px, 3vw, 24px);
+  font-family: var(--ptfont);
+  line-height: 1.6;
+  color: var(--gray-700);
+  max-width: 600px;
+  margin: 0 0 60px 0;
+}
+
 .contactme button {
   background-color: transparent;
-  border: 1px solid var(--green);
-  color: var(--lightest-navy);
-  width: 190px;
-  height: 50px;
-  border-radius: 10px;
-  font-family: var(--lato);
-  font-size: 17px;
+  border: 2px solid var(--black);
+  color: var(--black);
+  width: 200px;
+  height: 56px;
+  border-radius: 8px;
+  font-family: var(--ptfont);
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.5s ease all;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
+
+.contactme button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
 .contactme button:hover {
-  background-color: rgba(219, 100, 255, 0.1);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--shadow);
 }
+
+.contactme button:hover::before {
+  left: 0;
+}
+@media only screen and (max-width: 768px) {
+  .contactme {
+    padding: 80px 5% 60px;
+    min-height: 80vh;
+  }
+  
+  .contactme .contactme-desc p {
+    font-size: 18px;
+    margin: 0 0 40px 0;
+  }
+}
+
 @media only screen and (max-width: 460px) {
   .contactme {
-    height: 70vh;
+    padding: 60px 5% 40px;
+    min-height: 70vh;
   }
+  
   .contactme .contactme-title h2 {
-    font-size: 50px;
+    font-size: clamp(36px, 10vw, 48px);
   }
+  
   .contactme .contactme-desc p {
-    font-size: 15px;
-    line-height: 1.5rem;
-    padding: 15px 10%;
+    font-size: 16px;
+    margin: 0 0 30px 0;
   }
+  
   .contactme button {
-    height: 40px;
-    width: 140px;
+    height: 48px;
+    width: 160px;
+    font-size: 14px;
   }
 }
