@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import Homepage from "./Pages/Homepage";
 import Pageload from "./Components/pageload/Pageload";
 
@@ -13,9 +14,11 @@ function App() {
   }, []);
 
   return (
-    <div>
-      {loading ? <Pageload /> : <Homepage />}
-    </div>
+    <HelmetProvider>
+      <div>
+        {loading ? <Pageload /> : <Homepage />}
+      </div>
+    </HelmetProvider>
   );
 }
 
