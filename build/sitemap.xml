@@ -6,7 +6,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
       >
       <url>
-            <loc>https://www.yanis-portfolio.vercel.app/</loc>
+            <loc>https://www.yanis.meichtry.dev</loc>
             <lastmod>2023-07-23</lastmod>
             <changefreq>daily</changefreq>
             <priority>1.0</priority>

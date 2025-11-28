@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+# Replace with your actual domain if different
+Sitemap: https://yanis.meichtry.dev/sitemap.xml
