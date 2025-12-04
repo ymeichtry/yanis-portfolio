@@ -95,7 +95,7 @@ function Projects() {
               </svg>
             </motion.a>
             <motion.a
-              href="https://teamshifter.vercel.app/"
+              href="https://teamshifter.app/"
               aria-label="External Link"
               rel="noopener noreferrer"
               target="_blank"
