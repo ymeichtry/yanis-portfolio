@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { useScrollAnimation } from '../../hooks/useScrollAnimation';
+import { motion } from "framer-motion";
+import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 import "./Projects.css";
 
 const pimg2 = require("../../img/pimg2.webp");
@@ -14,9 +14,9 @@ function Projects() {
       opacity: 1,
       transition: {
         staggerChildren: 0.3,
-        delayChildren: 0.2
-      }
-    }
+        delayChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -26,14 +26,14 @@ function Projects() {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
-    <motion.section 
-      className="projects" 
+    <motion.section
+      className="projects"
       id="projects"
       ref={sectionRef}
       variants={containerVariants}
@@ -42,8 +42,11 @@ function Projects() {
     >
       <motion.h2 variants={itemVariants}>Some Things I've Built</motion.h2>
 
-      <motion.div className="project-container right-container" variants={itemVariants}>
-        <motion.div 
+      <motion.div
+        className="project-container right-container"
+        variants={itemVariants}
+      >
+        <motion.div
           className="container-img"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.3 }}
@@ -123,25 +126,29 @@ function Projects() {
         </div>
       </motion.div>
 
-      <motion.div className="project-container left-container" variants={itemVariants}>
+      <motion.div
+        className="project-container left-container"
+        variants={itemVariants}
+      >
         <div className="container-content">
           <div className="project-overline">Featured Project</div>
-          <h3 className="project-title">ZooYO</h3>
+          <h3 className="project-title">Glattalturniere-Webpage</h3>
           <div className="Project-desc">
             <p>
-              ZooYO - The ultimate zoo app! 🐾 Discover the fascinating world of
-              animals, plan zoo visits and experience exciting activities. 🦁🌍
+              The largest and most prestigious youth ice hockey tournaments in
+              Switzerland. Since 1994, the Glattal Tournament has been promoting
+              young talent in the U9 and U11 age groups.
             </p>
           </div>
           <ul className="project-tech">
             <li>React.js</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SpringBoot</li>
+            <li>TypeScript</li>
+            <li>Tailwind CSS</li>
+            <li>Supabase</li>
           </ul>
           <div className="project-link">
             <motion.a
-              href="https://github.com/ymeichtry/ZooYO"
+              href="https://github.com/ymeichtry/glattal-turnier-next"
               aria-label="GitHub Link"
               rel="noopener noreferrer"
               target="_blank"
@@ -164,7 +171,7 @@ function Projects() {
               </svg>
             </motion.a>
             <motion.a
-              href="https://github.com/ymeichtry"
+              href="https://glattalturniere.ch/"
               aria-label="External Link"
               rel="noopener noreferrer"
               target="_blank"
@@ -190,7 +197,7 @@ function Projects() {
             </motion.a>
           </div>
         </div>
-        <motion.div 
+        <motion.div
           className="container-img"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.3 }}
