@@ -154,11 +154,31 @@ a {
   }
 }
 
+/* Tablet styles */
+@media only screen and (max-width: 900px) {
+  .profile {
+    padding: 100px 5% 80px;
+  }
+  
+  .profile .profile-text {
+    width: 65%;
+  }
+  
+  .profile .profile-img {
+    width: 35%;
+  }
+  
+  .profile .profile-text h1 {
+    font-size: clamp(40px, 6vw, 56px);
+  }
+}
+
+/* Mobile styles */
 @media only screen and (max-width: 768px) {
   .profile {
     flex-direction: column;
     text-align: center;
-    padding: 60px 5% 100px;
+    padding: 140px 5% 100px;
     min-height: 80vh;
   }
   

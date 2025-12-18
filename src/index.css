@@ -80,7 +80,32 @@ body.dark {
 body.res-nav-active {
   overflow: hidden;
 }
+
 .none {
   display: none;
+}
+
+/* Ensure proper sizing on mobile */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Fix for iOS Safari 100vh issue */
+@supports (-webkit-touch-callout: none) {
+  .page-load {
+    height: -webkit-fill-available;
+  }
+}
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 

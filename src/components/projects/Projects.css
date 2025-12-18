@@ -221,6 +221,119 @@
 .projects .showmore button:hover::before {
   left: 0;
 }
+
+/* Tablet styles */
+@media only screen and (max-width: 900px) {
+  .projects {
+    padding: 80px 5% 60px;
+  }
+  
+  .projects h2 {
+    margin-bottom: 60px;
+  }
+  
+  .projects h2::after {
+    width: 100px;
+  }
+  
+  .projects .project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  
+  .projects .project-container .container-img,
+  .project-container.left-container .container-img {
+    grid-column: unset;
+    width: 100%;
+  }
+  
+  .left-container .container-content,
+  .right-container .container-content {
+    grid-column: unset;
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    align-items: flex-start;
+  }
+  
+  .left-container .container-content {
+    order: -1;
+  }
+  
+  .projects .project-container .project-img img {
+    height: 250px;
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  .projects {
+    padding: 60px 4% 40px;
+  }
+  
+  .projects h2 {
+    font-size: clamp(24px, 6vw, 32px);
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .projects h2::after {
+    display: none;
+  }
+  
+  .projects .project-container {
+    padding: 0;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .projects .project-container .project-img img {
+    height: 200px;
+  }
+  
+  .container-content .project-overline {
+    font-size: 12px;
+  }
+  
+  .container-content h3 {
+    font-size: clamp(20px, 5vw, 24px);
+    margin: 0 0 15px 0;
+  }
+  
+  .container-content .Project-desc {
+    padding: 16px;
+    font-size: 14px;
+    margin: 0 0 15px 0;
+  }
+  
+  .container-content .project-tech {
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .container-content .project-tech li {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+  
+  .container-content .project-link a {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .projects .showmore {
+    margin: 40px 0 0 0;
+  }
+  
+  .projects .showmore button {
+    height: 48px;
+    width: 160px;
+    font-size: 14px;
+  }
+}
+
 @media only screen and (max-width: 460px) {
   .projects {
     padding: 0px 0%;

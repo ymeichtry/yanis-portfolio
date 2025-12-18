@@ -130,14 +130,34 @@ body.dark .scroll .navbar {
   display: none;
 }
 @media only screen and (max-width: 768px) {
-  .navbar h1 {
-    font-size: 20px;
+  .navbar {
+    padding: 0 4%;
+    height: 70px;
   }
-  .navbar ul li {
-    padding: 0 10px;
-    font-size: 15px;
+  .navbar h1 {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  .navbar-btn button {
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
+
 @media only screen and (max-width: 460px) {
   .navbar {
     margin: 0 0;
@@ -180,18 +200,25 @@ body.dark .scroll .navbar {
     overflow: hidden;
     position: fixed;
     right: 0px;
-    z-index: 9;
-    width: 55vw;
+    z-index: 99;
+    width: 70vw;
+    max-width: 300px;
     height: 100vh;
-    background-color: var(--Yankees-Blue);
+    height: 100dvh;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    transform: translateX(300px);
-    transition: 0.2s ease-in;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
     top: 0;
+    box-shadow: -10px 0 30px var(--shadow-dark);
+  }
+  
+  body.dark .res-nav {
+    background-color: var(--gray-100);
   }
   .res-nav-active .res-nav {
     transform: translateX(0px);
@@ -205,36 +232,60 @@ body.dark .scroll .navbar {
   .res-nav-links ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     font-family: var(--ptfont);
-    font-weight: 600;
+    font-weight: 500;
   }
   .res-nav-links ul li {
-    font-size: 19px;
-    padding: 7px 0;
+    font-size: 18px;
+    padding: 12px 0;
     text-align: center;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .res-nav-links ul li:last-child {
+    border-bottom: none;
   }
   .res-nav-links ul li a {
     display: block;
     width: 100%;
     padding: 10px 0;
+    color: var(--black);
+    text-decoration: none;
+    transition: color 0.3s ease;
   }
-  .res-nav-overlay{
+  .res-nav-links ul li a:hover {
+    color: var(--gray-600);
+  }
+  .res-nav-overlay {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 8;
+    z-index: 98;
     width: 100vw;
     height: 100vh;
+    height: 100dvh;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: 0.2s ease-in;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
   }
-  .mobile-light-mode{
-    padding-top: 4px;
-    height: 2rem;
+  .res-nav-active .res-nav-overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .mobile-light-mode {
+    padding-top: 20px;
+    height: 3rem;
     background-color: transparent;
     border: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    cursor: pointer;
+  }
+  .mobile-light-mode svg {
+    width: 28px;
+    height: 28px;
   }
 }
