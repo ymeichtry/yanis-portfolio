@@ -42,9 +42,6 @@ const Navbar: React.FC<NavbarProps> = ({
           <NavLink to="/projects">Projects</NavLink>
         </li>
         <li>
-          <NavLink to="/resume">Skills</NavLink>
-        </li>
-        <li>
           <NavLink to="/contact">Contact</NavLink>
         </li>
         <li className="theme-toggle">

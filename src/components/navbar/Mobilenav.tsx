@@ -24,9 +24,6 @@ const Mobilenav: React.FC<MobilenavProps> = ({
             <NavLink to="/projects" onClick={navbarClick}>Projects</NavLink>
           </li>
           <li>
-            <NavLink to="/resume" onClick={navbarClick}>Skills</NavLink>
-          </li>
-          <li>
             <NavLink to="/contact" onClick={navbarClick}>Contact</NavLink>
           </li>
           <li>
