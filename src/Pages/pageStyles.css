@@ -1,0 +1,141 @@
+.site-page {
+  padding-top: 110px;
+}
+
+.page-width {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.page-hero {
+  padding: 40px 0 20px;
+  max-width: 840px;
+}
+
+.page-hero h1 {
+  margin: 12px 0 16px;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 1.05;
+  color: var(--black);
+}
+
+.page-hero p,
+.feature-card p,
+.info-card p,
+.resume-contact p {
+  color: var(--gray-700);
+  font-family: var(--ptfont);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.eyebrow {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gray-500);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.page-section {
+  padding: 40px 0 20px;
+}
+
+.page-section-heading {
+  max-width: 760px;
+  margin-bottom: 24px;
+}
+
+.page-section-heading h2,
+.resume-contact h2,
+.info-card h2,
+.feature-card h3 {
+  margin: 10px 0 0;
+  color: var(--black);
+}
+
+.feature-grid,
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.feature-card,
+.info-card {
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
+.text-link,
+.primary-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 18px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.primary-link {
+  justify-content: center;
+  min-width: 180px;
+  height: 54px;
+  padding: 0 20px;
+  border-radius: 999px;
+  border: 2px solid var(--black);
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-pill {
+  border: 1px solid var(--gray-300);
+  background: var(--gray-100);
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.resume-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, var(--gray-100), transparent);
+  border: 1px solid var(--gray-200);
+}
+
+.contact-page .contactme {
+  padding-top: 60px;
+}
+
+@media (max-width: 900px) {
+  .feature-grid,
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-page {
+    padding-top: 90px;
+  }
+}
