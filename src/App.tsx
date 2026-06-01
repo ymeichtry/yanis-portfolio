@@ -5,7 +5,6 @@ import Pageload from "./Components/pageload/Pageload";
 import SiteLayout from "./layouts/SiteLayout";
 import Homepage from "./Pages/Homepage";
 import ProjectsPage from "./Pages/ProjectsPage";
-import ResumePage from "./Pages/ResumePage";
 import ContactPage from "./Pages/ContactPage";
 
 function App() {
@@ -28,7 +27,6 @@ function App() {
             <Route element={<SiteLayout />}>
               <Route path="/" element={<Homepage />} />
               <Route path="/projects" element={<ProjectsPage />} />
-              <Route path="/resume" element={<ResumePage />} />
               <Route path="/contact" element={<ContactPage />} />
             </Route>
             <Route path="*" element={<Navigate to="/" replace />} />
