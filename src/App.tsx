@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import Homepage from "./Pages/Homepage";
 import Pageload from "./Components/pageload/Pageload";
+import SiteLayout from "./layouts/SiteLayout";
+import Homepage from "./Pages/Homepage";
+import ProjectsPage from "./Pages/ProjectsPage";
+import ResumePage from "./Pages/ResumePage";
+import ContactPage from "./Pages/ContactPage";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -15,9 +20,21 @@ function App() {
 
   return (
     <HelmetProvider>
-      <div>
-        {loading ? <Pageload /> : <Homepage />}
-      </div>
+      {loading ? (
+        <Pageload />
+      ) : (
+        <BrowserRouter>
+          <Routes>
+            <Route element={<SiteLayout />}>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/resume" element={<ResumePage />} />
+              <Route path="/contact" element={<ContactPage />} />
+            </Route>
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </BrowserRouter>
+      )}
     </HelmetProvider>
   );
 }

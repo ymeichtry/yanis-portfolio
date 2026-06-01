@@ -1,11 +1,11 @@
 .contactme {
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 120px 5% 80px;
+  padding: 40px 5% 60px;
   max-width: 1400px;
   margin: 0 auto;
   text-align: center;
@@ -19,14 +19,6 @@
   font-family: var(--lato);
   font-weight: 700;
   position: relative;
-}
-
-.contactme .contactme-title h2::before {
-  content: "03.";
-  color: var(--gray-400);
-  font-size: clamp(16px, 2vw, 20px);
-  font-weight: 400;
-  margin-right: 10px;
 }
 
 .contactme .contactme-desc p {
@@ -77,8 +69,8 @@
 }
 @media only screen and (max-width: 768px) {
   .contactme {
-    padding: 80px 5% 60px;
-    min-height: 80vh;
+    padding: 40px 5% 60px;
+    min-height: 50vh;
   }
   
   .contactme .contactme-desc p {

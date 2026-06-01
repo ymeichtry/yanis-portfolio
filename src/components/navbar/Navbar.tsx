@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
 interface NavbarProps {
@@ -28,18 +29,23 @@ const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <nav className="navbar nav">
-      <a href="#profile">
+      <Link to="/">
         <h1> &lt; ymeichtry /&gt;</h1>
-      </a>
+      </Link>
       <ul>
         <li>
-          <a href="#profile">Home</a>
+          <NavLink to="/" end>
+            Home
+          </NavLink>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <NavLink to="/projects">Projects</NavLink>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <NavLink to="/resume">Skills</NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
         <li className="theme-toggle">
           <button 

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 interface MobilenavProps {
   nightLightMode: () => void;
@@ -17,13 +18,16 @@ const Mobilenav: React.FC<MobilenavProps> = ({
       <div className="res-nav-links">
         <ul>
           <li>
-            <a href="#profile">Home</a>
+            <NavLink to="/" end onClick={navbarClick}>Home</NavLink>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <NavLink to="/projects" onClick={navbarClick}>Projects</NavLink>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <NavLink to="/resume" onClick={navbarClick}>Skills</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" onClick={navbarClick}>Contact</NavLink>
           </li>
           <li>
           <button className="mobile-light-mode" id="nightlightmode" onClick={nightLightMode}>

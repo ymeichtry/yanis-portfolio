@@ -6,11 +6,12 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
-  padding: 40px 5%;
+  min-height: 74vh;
+  padding: 0 5% 0;
   max-width: 1400px;
   margin: 0 auto;
   position: relative;
+  transform: translateY(-1vh);
 }
 .profile .profile-text {
   display: flex;
@@ -157,7 +158,9 @@ a {
 /* Tablet styles */
 @media only screen and (max-width: 900px) {
   .profile {
-    padding: 100px 5% 80px;
+    min-height: 72vh;
+    padding: 0 5% 0;
+    transform: translateY(-1vh);
   }
   
   .profile .profile-text {
@@ -178,8 +181,9 @@ a {
   .profile {
     flex-direction: column;
     text-align: center;
-    padding: 140px 5% 100px;
-    min-height: 80vh;
+    padding: 0 5% 48px;
+    min-height: 68vh;
+    transform: translateY(0vh);
   }
   
   .profile .profile-text {
@@ -209,8 +213,9 @@ a {
 }
 @media only screen and (max-width: 460px) {
   .profile {
-    padding: 80px 5% 40px;
-    min-height: 70vh;
+    padding: 0 5% 32px;
+    min-height: 64vh;
+    transform: translateY(0vh);
   }
   
   .profile .profile-text h1 {
